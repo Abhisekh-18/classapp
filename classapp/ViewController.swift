@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var score: UILabel!
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var change: UIButton!
+    @IBOutlet weak var lable: UILabel!
+    @IBOutlet var mainView: UIView!
     var contry:[String]=["India","China","Nepal","Japan"]
     var captal:[String]=["Delhi","Hongkong","Kathmandu","Tokyo"]
     var sco = 0
@@ -72,6 +74,11 @@ class ViewController: UIViewController {
     }
     @IBAction func change(_ sender: Any) {
         img.image=UIImage(named: String(Int.random(in: 1...6)))
+    }
+    @IBAction func sliderValue(_ sender: UISlider) {
+        var count=Int(sender.value)
+        lable.text="\(count)"
+        mainView.backgroundColor=UIColor.init(cgColor: "black" as! CGColor)
     }
     
 }

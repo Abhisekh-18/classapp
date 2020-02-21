@@ -85,17 +85,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C78-gM-5Ux">
-                                <rect key="frame" x="20" y="482" width="240" height="128"/>
+                                <rect key="frame" x="174" y="414" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOr-sC-SnD">
-                                <rect key="frame" x="91" y="618" width="99" height="30"/>
+                                <rect key="frame" x="34" y="482" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change Image"/>
                                 <connections>
                                     <action selector="change:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wK8-Y8-wNv"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23u-dR-AMW">
+                                <rect key="frame" x="174" y="651" width="81" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="RSG-OF-YLY">
+                                <rect key="frame" x="48" y="570" width="333" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="t4Q-qL-IRy"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -109,6 +123,8 @@
                         <outlet property="country" destination="lR9-Io-G32" id="DG7-rx-nYG"/>
                         <outlet property="fact" destination="ds4-9M-SxI" id="p35-j8-tzL"/>
                         <outlet property="img" destination="C78-gM-5Ux" id="Ioi-EQ-amU"/>
+                        <outlet property="lable" destination="23u-dR-AMW" id="RgZ-Tc-cvg"/>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="Uhz-Do-bIE"/>
                         <outlet property="num" destination="SZb-Lm-tnj" id="Gqc-jy-3a1"/>
                         <outlet property="score" destination="aSV-T1-Ba1" id="zTV-6n-tsZ"/>
                         <outlet property="user_name" destination="Ruu-vx-or0" id="0z6-Nn-u1f"/>
